@@ -14,7 +14,7 @@ const getLatestCountryDataByName = async () => {
       },
     });
 
-    return data;
+    return data[0]; // 0 because it is where the actual data we want is stored
 
   } catch (error) {
     console.log(error);
