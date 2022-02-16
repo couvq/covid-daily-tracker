@@ -3,7 +3,6 @@ import Header from './components/Header';
 
 // where our data comes from
 import getLatestCountryDataByName from './api/fetchData';
-import { Typography } from '@mui/material';
 
 const App = () => {
 
