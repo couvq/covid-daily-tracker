@@ -6,7 +6,7 @@ const URL = "https://covid-19-data.p.rapidapi.com/country";
 const getLatestCountryDataByName = async () => {
   try {
     // call the request
-    const data = await axios.get(URL, {
+    const {data} = await axios.get(URL, {
       params: { name: "USA" },
       headers: {
         "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
