@@ -10,7 +10,7 @@ const App = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        getLatestCountryDataByName()
+        getLatestCountryDataByName('USA') // hard passing in USA for now
             .then((data) => {
                 console.log(data);
                 setData(data);
