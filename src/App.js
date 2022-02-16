@@ -7,7 +7,7 @@ import getLatestCountryDataByName from './api/fetchData';
 
 const App = () => {
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState({});
 
     useEffect(() => {
         getLatestCountryDataByName('USA') // hard passing in USA for now
