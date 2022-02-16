@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
+import Display from './components/Display';
 
-// where our data comes from
+// api call where our data comes from
 import getLatestCountryDataByName from './api/fetchData';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <>
         <Header />
+        <Display />
     </>
   );
 }
